@@ -25,23 +25,25 @@ Partial Class Orders
         Me.returnHome = New System.Windows.Forms.Button()
         Me.allOrders = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.VScrollBar1 = New System.Windows.Forms.VScrollBar()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.VScrollBar2 = New System.Windows.Forms.VScrollBar()
-        Me.Label10 = New System.Windows.Forms.Label()
+        Me.printBTn = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.SuspendLayout()
@@ -85,44 +87,6 @@ Partial Class Orders
         Me.Panel1.Size = New System.Drawing.Size(963, 241)
         Me.Panel1.TabIndex = 2
         '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(233, Byte), Integer))
-        Me.Panel2.Controls.Add(Me.VScrollBar1)
-        Me.Panel2.Location = New System.Drawing.Point(11, 46)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(941, 184)
-        Me.Panel2.TabIndex = 0
-        '
-        'VScrollBar1
-        '
-        Me.VScrollBar1.Location = New System.Drawing.Point(924, 0)
-        Me.VScrollBar1.Name = "VScrollBar1"
-        Me.VScrollBar1.Size = New System.Drawing.Size(17, 184)
-        Me.VScrollBar1.TabIndex = 0
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Cascadia Mono", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(29, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(47, 17)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(88, 17)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Order Date"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Cascadia Mono", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(29, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(446, 17)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(104, 17)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Order Amount"
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -144,6 +108,45 @@ Partial Class Orders
         Me.Label4.Size = New System.Drawing.Size(136, 17)
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "Ordered Products"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Cascadia Mono", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(29, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(446, 17)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(104, 17)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Order Amount"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Cascadia Mono", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(29, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(47, 17)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(88, 17)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Order Date"
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(233, Byte), Integer))
+        Me.Panel2.Controls.Add(Me.DataGridView1)
+        Me.Panel2.Location = New System.Drawing.Point(11, 46)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(941, 184)
+        Me.Panel2.TabIndex = 0
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(0, 0)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(941, 184)
+        Me.DataGridView1.TabIndex = 1
         '
         'Label5
         '
@@ -170,6 +173,17 @@ Partial Class Orders
         Me.Panel3.Padding = New System.Windows.Forms.Padding(8)
         Me.Panel3.Size = New System.Drawing.Size(963, 241)
         Me.Panel3.TabIndex = 2
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Cascadia Mono", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(29, Byte), Integer))
+        Me.Label10.Location = New System.Drawing.Point(856, 17)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(56, 17)
+        Me.Label10.TabIndex = 1
+        Me.Label10.Text = "Action"
         '
         'Label6
         '
@@ -231,16 +245,19 @@ Partial Class Orders
         Me.VScrollBar2.Size = New System.Drawing.Size(17, 184)
         Me.VScrollBar2.TabIndex = 0
         '
-        'Label10
+        'printBTn
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Cascadia Mono", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(29, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(856, 17)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(56, 17)
-        Me.Label10.TabIndex = 1
-        Me.Label10.Text = "Action"
+        Me.printBTn.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.printBTn.FlatAppearance.BorderSize = 0
+        Me.printBTn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.printBTn.Font = New System.Drawing.Font("Cascadia Mono", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.printBTn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(29, Byte), Integer))
+        Me.printBTn.Location = New System.Drawing.Point(1052, 388)
+        Me.printBTn.Name = "printBTn"
+        Me.printBTn.Size = New System.Drawing.Size(84, 35)
+        Me.printBTn.TabIndex = 3
+        Me.printBTn.Text = "Print"
+        Me.printBTn.UseVisualStyleBackColor = False
         '
         'Orders
         '
@@ -248,6 +265,7 @@ Partial Class Orders
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(233, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1264, 681)
+        Me.Controls.Add(Me.printBTn)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label5)
@@ -261,6 +279,7 @@ Partial Class Orders
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
         Me.Panel4.ResumeLayout(False)
@@ -273,7 +292,6 @@ Partial Class Orders
     Friend WithEvents allOrders As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents VScrollBar1 As VScrollBar
     Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
@@ -287,4 +305,6 @@ Partial Class Orders
     Friend WithEvents Panel4 As Panel
     Friend WithEvents VScrollBar2 As VScrollBar
     Friend WithEvents Label10 As Label
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents printBTn As Button
 End Class
