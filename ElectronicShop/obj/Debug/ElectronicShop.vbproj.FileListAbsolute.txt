@@ -28,3 +28,17 @@ C:\Users\Nielstupido\Desktop\Ol Class\3rd-Yr-2nd-Sem\EDP\Act\ElectronicShop\Elec
 C:\Users\Nielstupido\Desktop\Ol Class\3rd-Yr-2nd-Sem\EDP\Act\ElectronicShop\ElectronicShop\obj\Debug\ElectronicShop.Employees.resources
 C:\Users\Nielstupido\Desktop\Ol Class\3rd-Yr-2nd-Sem\EDP\Act\ElectronicShop\ElectronicShop\obj\Debug\ElectronicShop.Orders.resources
 C:\Users\Nielstupido\Desktop\Ol Class\3rd-Yr-2nd-Sem\EDP\Act\ElectronicShop\ElectronicShop\obj\Debug\ElectronicShop.Products.resources
+D:\Projects\Game Dev\CapstoneProject\edp_program\ElectronicShop\obj\Debug\ElectronicShop.vbproj.AssemblyReference.cache
+D:\Projects\Game Dev\CapstoneProject\edp_program\ElectronicShop\obj\Debug\ElectronicShop.vbproj.SuggestedBindingRedirects.cache
+D:\Projects\Game Dev\CapstoneProject\edp_program\ElectronicShop\obj\Debug\ElectronicShop.Clients.resources
+D:\Projects\Game Dev\CapstoneProject\edp_program\ElectronicShop\obj\Debug\ElectronicShop.Dashboard.resources
+D:\Projects\Game Dev\CapstoneProject\edp_program\ElectronicShop\obj\Debug\ElectronicShop.Employees.resources
+D:\Projects\Game Dev\CapstoneProject\edp_program\ElectronicShop\obj\Debug\ElectronicShop.Login.resources
+D:\Projects\Game Dev\CapstoneProject\edp_program\ElectronicShop\obj\Debug\ElectronicShop.Resources.resources
+D:\Projects\Game Dev\CapstoneProject\edp_program\ElectronicShop\obj\Debug\ElectronicShop.Orders.resources
+D:\Projects\Game Dev\CapstoneProject\edp_program\ElectronicShop\obj\Debug\ElectronicShop.Products.resources
+D:\Projects\Game Dev\CapstoneProject\edp_program\ElectronicShop\obj\Debug\ElectronicShop.vbproj.GenerateResource.cache
+D:\Projects\Game Dev\CapstoneProject\edp_program\ElectronicShop\obj\Debug\ElectronicShop.vbproj.CoreCompileInputs.cache
+D:\Projects\Game Dev\CapstoneProject\edp_program\ElectronicShop\obj\Debug\ElectronicShop.exe
+D:\Projects\Game Dev\CapstoneProject\edp_program\ElectronicShop\obj\Debug\ElectronicShop.xml
+D:\Projects\Game Dev\CapstoneProject\edp_program\ElectronicShop\obj\Debug\ElectronicShop.pdb
